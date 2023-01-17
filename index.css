@@ -18,3 +18,12 @@ nav{
 .title{
 	font-size: 32px;
 }
+
+#about{
+	min-height: 100vh;
+	max-height: 100vh;
+}
+
+.about img{
+	max-height: 300px;
+}

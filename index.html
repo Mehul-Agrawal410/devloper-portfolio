@@ -19,7 +19,7 @@
 <body>
 
 	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top mb-3">
 	  <a class="navbar-brand" href="#">Navbar</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -27,25 +27,53 @@
 	  <div class="collapse navbar-collapse" id="navbarNav">
 	    <ul class="navbar-nav ml-auto">
 	      <li class="nav-item active">
-	        <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="#landing">Home <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#about">About Us</a>
+	        <a class="nav-link" href="#about">About Me</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#gallery">Gallery</a>
+	        <a class="nav-link" href="#gallery">Tools</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#contact">Contact Us</a>
+	        <a class="nav-link" href="#contact">Contact Me</a>
 	      </li>
 	    </ul>
 	  </div>
 	</nav>
 
 	<!-- Main body -->
-	<div class="container-fluid d-flex justify-content-around m-3 p-3" id="landing">
-		<div class="col-7 d-flex justify-content-center align-items-center title">My Developer Portfolio</div>
+	<div class="container-fluid d-flex justify-content-around mt-3" id="landing">
+		<div class="col-7 d-flex justify-content-center flex-column align-items-center">
+			<div class="title">My Developer Portfolio</div>
+			<div>Mehul Agrawal</div>
+		</div>
 		<div class="col-5"><img src="images/landing.jpg" class="img-fluid h-100"></div>
+	</div>
+
+	<!-- ABout us section -->
+	<div id="about">
+		<h2 class="text-center">About Me</h2>
+		<div class="d-flex flex-column h-50 about">
+			<div class="d-flex flex-row justify-content-center">
+				<div class="col-4"><img src="images/aboutme.png" class="img-fluid d-block ml-auto mr-auto"></div>
+				<div class="col-4 d-flex align-items-center bg-danger text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.></div>
+			</div>
+			<div class="d-flex flex-row justify-content-center">
+				<div class="col-4 d-flex align-items-center text-right bg-secondary text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.></div>
+				<div class="col-4"><img src="images/movies.png" class="img-fluid"></div>
+			</div>
+		</div>
 	</div>
 
 	<!-- Bootstrap script -->
