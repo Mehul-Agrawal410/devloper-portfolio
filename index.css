@@ -11,6 +11,10 @@ nav{
 	background-color: #0E273C;
 }
 
+.navbar{
+	margin-bottom: 16px;
+}
+
 #landing{
 	height: 100vh;
 }
