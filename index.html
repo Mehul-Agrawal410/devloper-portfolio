@@ -20,7 +20,7 @@
 
 	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top mb-3">
-	  <a class="navbar-brand" href="#">Navbar</a>
+	  <a class="navbar-brand" href="#landing"><img src="images/icon.png"></a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -33,7 +33,7 @@
 	        <a class="nav-link" href="#about">About Me</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#gallery">Tools</a>
+	        <a class="nav-link" href="#tools">Tools</a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="#contact">Contact Me</a>
@@ -42,27 +42,91 @@
 	  </div>
 	</nav>
 
-	<!-- Main body -->
-	<div class="container-fluid d-flex justify-content-around mt-3" id="landing">
-		<div class="col-7 d-flex justify-content-center flex-column align-items-center">
-			<div class="title">My Developer Portfolio</div>
+	<!-- Landing -->
+	<div class="container-fluid d-flex justify-content-around scroll-top-margin pr-0" id="landing">
+		<div class="col-12 col-md-6 col-lg-7 d-flex justify-content-center flex-column align-items-center m-sm-5 m-lg-0">
+			<div class="title text-center">My Developer Portfolio</div>
 			<div>Mehul Agrawal</div>
 		</div>
-		<div class="col-5"><img src="images/landing3.jpg" class="img-fluid h-100"></div>
+		<div class="d-none d-md-block col-md-6 col-lg-5 landing-img p-0"><img src="images/landing3.jpg" class="img-fluid h-100"></div>
 	</div>
 
-	<!-- ABout us section -->
-	<div class="m-3" id="about">
+	<!-- About us section -->
+	<div class="m-5 scroll-top-margin" id="about">
 		<h2 class="text-center">About Me</h2>
-		<div class="d-flex flex-column h-50 about">
-			<div class="d-flex flex-row justify-content-center">
-				<div class="col-4"><img src="images/aboutme.png" class="img-fluid d-block ml-auto mr-auto"></div>
-				<div class="col-4 d-flex align-items-center bg-warning">I am 2nd year student at Indian Institute of technology, Bombay. Although I am pursuing civil engineering, I always find myself more attracted to the world of computers and programming. I really hope to have a career in computer science in future be it any field - web development, ML or data analysis. Not saying that civil engineering isn't good but cs is just better (sorry to any fellow civil engineers reading this)</div>
+		<div class="d-flex flex-column about">
+			<div class="d-md-flex flex-row justify-content-center">
+				<div class="col-12 col-md-6 col-lg-4 w-100"><img src="images/aboutme.png" class="img-fluid d-block ml-auto mr-auto"></div>
+				<div class="col-12 col-md-6 col-lg-4 d-flex align-items-center bg-warning">I am 2nd year student at Indian Institute of technology, Bombay. Although I am pursuing civil engineering, I always find myself more attracted to the world of computers and programming. I really hope to have a career in computer science in future be it any field - web development, ML or data analysis. Not saying that civil engineering isn't good but cs is just better (sorry to any fellow civil engineers reading this)</div>
 			</div>
-			<div class="d-flex flex-row justify-content-center">
-				<div class="col-4 d-flex align-items-center text-right bg-danger text-light">I don't really have much extra curricular interests like sports or music, but one thing I absolutely love doing is watching movies and tv shows. Not the most productive hobby out there, I know, but it is what it is. I have watched a lot of movies and shows and although I don't play it, I love watching cricket as well. That about sums up my interests and hobbies. Not the most interesting person out there, yeah I know :(</div>
-				<div class="col-4"><img src="images/movies.png" class="img-fluid"></div>
+			<div class="d-md-flex flex-row justify-content-center">
+				<div class="col-12 col-md-6 col-lg-4 order-1 order-md-2"><img src="images/movies.png" class="img-fluid d-block ml-auto mr-auto"></div>
+				<div class="col-12 col-md-6 col-lg-4 d-flex align-items-center text-right bg-danger text-light order-2 order-md-1 w-100">I don't really have much extra curricular interests like sports or music, but one thing I absolutely love doing is watching movies and tv shows. Not the most productive hobby out there, I know, but it is what it is. I have watched a lot of movies and shows and although I don't play it, I love watching cricket as well. That about sums up my interests and hobbies. Not the most interesting person out there, yeah I know :(</div>
 			</div>
+		</div>
+	</div>
+
+	<!-- Tools -->
+	<div id="tools" class="d-md-flex flex-column align-items-center m-5 scroll-top-margin">
+		<h2 class="text-center mb-4">Tools</h2>
+		<div class="row col-lg-12 justify-content-around">
+			<div><img src="images/html.png" class="img-fluid tools-t"></div>
+			<div><img src="images/bootstrap.png" class="img-fluid tools-t"></div>
+			<div><img src="images/css.png" class="img-fluid tools-t"></div>
+		</div>
+		<div class="row justify-content-center"><img src="images/gitlab.png" class="img-fluid tools-m"></div>
+		<div class="d-flex col-10 row justify-content-around">
+			<div><img src="images/sublime.png" class="img-fluid tools-b"></div>
+			<div><img src="images/github.png" class="img-fluid tools-b"></div>
+		</div>
+	</div>
+
+	<!-- Contact me section -->
+	<div class="d-flex flex-column justify-content-center container-fluid text-center col-12 col-md-8 col-xl-4 scroll-top-margin" id="contact">
+		<div class="p-3 text-dark font-weight-bold contact-heading">Contact</div>
+		<div class="bg-dark text-light p-3">
+			<form>
+			  <div class="form-group">
+			  	<label for="Name">Name</label>
+			  	<input type="text" class="form-control" id="Name" placeholder="Your name" required>
+			  </div>
+			  <div class="form-group">
+			    <label for="Email">Email address</label>
+			    <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="name@example.com" required>
+			  </div>
+			  <div class="form-group">
+			    <label for="contact">Contact Number</label>
+			    <input type="number" class="form-control" id="contact" placeholder="+63 900 000 0000" required>
+			  </div>
+			  <div class="form-group">
+			      <label for="message">Message</label>
+			      <textarea class="form-control" id="message" rows="5"></textarea>
+			  </div>
+			  <!-- Button trigger modal -->
+			  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">
+			    Send Email
+			  </button>
+
+			  <!-- Modal -->
+			  <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			    <div class="modal-dialog">
+			      <div class="modal-content text-dark">
+			        <div class="modal-header">
+			          <h5 class="modal-title" id="staticBackdropLabel">Thank you for contacting us!</h5>
+			          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			            <span aria-hidden="true">&times;</span>
+			          </button>
+			        </div>
+			        <div class="modal-body">
+			          Message Successfully Sent
+			        </div>
+			        <div class="modal-footer">
+			          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</form>
 		</div>
 	</div>
 

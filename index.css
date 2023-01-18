@@ -11,11 +11,19 @@ nav{
 	background-color: #0E273C;
 }
 
+.scroll-top-margin{
+	scroll-margin-top: 65px;
+}
+
 .navbar{
 	margin-bottom: 16px;
 }
 
 #landing{
+	padding-top: 65px;
+}
+
+.landing-img{
 	height: 100vh;
 }
 
@@ -24,10 +32,39 @@ nav{
 }
 
 #about{
-	min-height: 100vh;
-	max-height: 100vh;
+	padding-left: 50px;
 }
 
 .about img{
 	max-height: 300px;
+}
+
+#tools{
+	padding-left: 50px;
+}
+
+.css-bootstrap{
+	max-height: 250px;
+}
+
+.contact-heading{
+	font-size: 32px;
+}
+
+.html{
+	height: 225px;
+	width: 250px;
+}
+
+.tools-t{
+	height: 225px;
+	width: 200px;
+}
+
+.tools-m{
+	max-height: 275px;
+}
+
+.tools-b{
+	max-height: 225px;
 }
